@@ -1,0 +1,121 @@
+/*----------------------
+   color,font and variables setup
+   ---------------------------------*/
+
+:root{
+    --c-primary: #975af9;
+    --c-secondry: #46a7f8;
+    --c-background: #e6e6e6;
+    --c-dark: #2d2d2d;
+    --c-black: #000000;
+    --font-baze:"poppins",sans-serif;
+}
+
+body{
+    font-family:var(--font-base) ;
+    font-size: 16px;
+    line-height: 1.6;
+    
+}
+
+.h1{
+    font-family:fantasy;
+}
+.h2.h3.h5.h6{
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: var(--c-primary);
+}
+
+a:hover{
+    color: var(--c-secondry);
+}
+
+.section-padding{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/*----------------------
+   Button CSS setup
+   ---------------------------------*/
+.btn{
+    font-weight: 600 !important;
+}
+.btn-primary{
+    background-color: var(--c-primary) !important;
+}
+.btn-primary:hover{
+    background-color: var(--c-dark) !important;
+}
+.btn-light{
+    background-color: var(--c-background);
+}
+
+/*----------------------
+   Navbar CSS setup
+   ---------------------------------*/
+.navbar{
+    font-family: var(--font-base);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.navbar-dark{
+    background-color: var(--c-black);
+}
+
+/*----------------------
+   Hero CSS setup
+   ---------------------------------*/
+#Hero{
+    background: url(../img/home/Hero.jpg);
+    min-height: 100vh;
+    background-position: top;
+    margin-top: --55px;
+   
+}
+.herotext{
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  .whatsapp-icon {
+    margin-top: 16px;
+  }
+
+  /* for mobile */
+  @media screen and (max-width: 767px){
+    .whatsapp-icon {
+      margin-top: 10px;
+    }
+    .whatsapp_float {
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
+    }
+  }
